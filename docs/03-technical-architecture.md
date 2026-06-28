@@ -6,7 +6,7 @@ Project: Math Tutor Web Application
 
 ## 1. Architecture Overview
 
-The recommended architecture is a static-first web application. Lessons, exercises, and metadata will be stored in the Git repository and built into static pages during deployment.
+The recommended architecture is a static-first web application. Lessons, exercises, and metadata will be stored in the Git repository and published as static pages during deployment.
 
 This architecture is appropriate because the project needs:
 
@@ -23,9 +23,11 @@ The application must support multiple learning templates. A nursery learner shou
 
 | Layer | Recommendation | Reason |
 | --- | --- | --- |
-| Framework | Next.js with static generation | Modern React framework with strong SEO support. |
-| Language | TypeScript | Safer code and better maintainability. |
-| Styling | Tailwind CSS | Fast responsive UI development. |
+| MVP framework | Dependency-free static HTML, CSS, and JavaScript | Runs immediately while local npm install is blocked. |
+| Future framework | Next.js with static generation | Modern React framework with strong SEO support when tooling is healthy. |
+| Future language | TypeScript | Safer code and better maintainability. |
+| MVP styling | Plain CSS with documented design tokens | No build step required. |
+| Future styling | Tailwind CSS | Fast responsive UI development after package installation is reliable. |
 | Content | MDX | Allows lessons to combine Markdown and interactive components. |
 | Math rendering | KaTeX or MathJax | Displays equations cleanly in the browser. |
 | Icons | Lucide React | Lightweight modern icon system. |

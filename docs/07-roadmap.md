@@ -38,9 +38,8 @@ Target Duration: 3 to 7 days
 
 Deliverables:
 
-- Next.js application.
-- TypeScript configuration.
-- Tailwind CSS setup.
+- Dependency-free static MVP.
+- Future-ready plan for Next.js, TypeScript, and Tailwind CSS after npm install is reliable.
 - Base layout.
 - Responsive navigation.
 - Home page.
@@ -52,8 +51,8 @@ Deliverables:
 
 Exit Criteria:
 
-- The site runs locally.
-- The site builds successfully.
+- The site opens locally through `index.html`.
+- The static check passes.
 - Basic navigation works on mobile and desktop.
 
 ## 4. Phase 2: First Content Release

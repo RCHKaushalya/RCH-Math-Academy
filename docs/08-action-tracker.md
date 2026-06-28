@@ -102,48 +102,48 @@ Recommended GitHub labels:
 | ID | Task | Priority | Status | Depends On | Acceptance Criteria |
 | --- | --- | --- | --- | --- | --- |
 | ENV-001 | Verify Node and npm runtime. | P0 | Blocked | GIT-001 | `node --version` and `npm --version` return successfully. Current shell checks time out intermittently. |
-| ENV-002 | Install project dependencies. | P0 | Blocked | ENV-001 | `npm install` creates `node_modules` and `package-lock.json`. Current install hangs without producing files. |
-| ENV-003 | Verify local build. | P0 | Not Started | ENV-002 | `npm run build` succeeds. |
+| ENV-002 | Install project dependencies. | P0 | Blocked | ENV-001 | `npm install` creates `node_modules` and `package-lock.json`. Current install hangs and creates incomplete dependency folders. |
+| ENV-003 | Verify static MVP. | P0 | Done | APP-001 | Static check passes without dependency installation. |
 
 ## 6. Phase 2 - Application Foundation
 
 | ID | Task | Priority | Status | Depends On | Acceptance Criteria |
 | --- | --- | --- | --- | --- | --- |
-| APP-001 | Scaffold Next.js project. | P0 | In Progress | GIT-001 | App runs locally. Files exist, but dependency install is blocked. |
-| APP-002 | Add TypeScript configuration. | P0 | In Progress | APP-001 | TypeScript build passes. Configuration exists, build pending. |
-| APP-003 | Add Tailwind CSS. | P0 | In Progress | APP-001 | Tailwind styles compile. Configuration exists, compile pending. |
-| APP-004 | Add linting. | P0 | In Progress | APP-001 | Lint command exists and runs. Script/config exist, verification pending. |
+| APP-001 | Scaffold dependency-free static MVP. | P0 | Done | GIT-001 | `index.html`, `styles.css`, and `app.js` exist and can run without npm install. |
+| APP-002 | Add future TypeScript configuration. | P1 | Blocked | ENV-002 | TypeScript will be reintroduced after npm install is reliable. |
+| APP-003 | Add future Tailwind CSS. | P1 | Blocked | ENV-002 | Tailwind will be reintroduced after npm install is reliable. |
+| APP-004 | Add linting. | P1 | Blocked | ENV-002 | Lint tooling will be added after dependency installation is reliable. |
 | APP-005 | Add formatting command. | P1 | Not Started | APP-001 | Format command exists and runs. |
-| APP-006 | Add base application layout. | P0 | In Progress | APP-003 | Layout renders header, main area, and footer. Files exist, browser verification pending. |
+| APP-006 | Add base application layout. | P0 | Done | APP-001 | Static layout renders header, main area, and footer. |
 | APP-007 | Add route structure. | P0 | Not Started | APP-006 | Routes exist for home, topics, lessons, practice, and policy pages. |
 | APP-008 | Add reusable page metadata helper. | P0 | Not Started | APP-007 | Pages can generate unique SEO metadata. |
 | APP-009 | Add reusable lesson template. | P0 | Not Started | APP-007 | Lesson content renders in a consistent format. |
 | APP-010 | Add topic index page. | P0 | Not Started | APP-007 | Users can browse topic groups. |
 | APP-011 | Add level index page. | P0 | Not Started | APP-007 | Users can browse by level. |
 | APP-012 | Add search index data structure. | P1 | Not Started | APP-010 | Lesson metadata can be searched client-side. |
-| APP-013 | Add responsive navigation. | P0 | In Progress | APP-006 | Navigation works on desktop and mobile. Header links exist, browser verification pending. |
+| APP-013 | Add responsive navigation. | P0 | Done | APP-006 | Static header links exist and responsive CSS is implemented. |
 | APP-014 | Add footer with required links. | P0 | Not Started | APP-006 | Footer links to About, Contact, Privacy, Terms, and Disclaimer. |
 | APP-015 | Add 404 page. | P1 | Not Started | APP-007 | Missing pages show helpful navigation. |
 | APP-016 | Add sitemap generation. | P0 | Not Started | APP-008 | Sitemap includes public pages and lessons. |
 | APP-017 | Add robots file. | P0 | Not Started | APP-016 | Search engines can crawl public content. |
 | APP-018 | Add RSS or content feed. | P3 | Not Started | APP-010 | New lessons can be followed by feed readers. |
 | APP-019 | Add environment variable pattern. | P1 | Not Started | APP-001 | Future secrets are not hard-coded. |
-| APP-020 | Add production build command. | P0 | In Progress | APP-001 | `npm run build` succeeds. Script exists, verification pending dependency install. |
+| APP-020 | Add production build command. | P2 | Blocked | ENV-002 | Build command will be added when framework tooling is reliable. Static MVP does not require a build command. |
 
 ## 7. Phase 3 - Sky-Blue Elegant Design System
 
 | ID | Task | Priority | Status | Depends On | Acceptance Criteria |
 | --- | --- | --- | --- | --- | --- |
-| DES-001 | Define sky-blue light theme color tokens. | P0 | Not Started | DOC-011 | Theme tokens are implemented in Tailwind or CSS variables. |
+| DES-001 | Define sky-blue light theme color tokens. | P0 | Done | DOC-011 | Theme tokens are implemented in static CSS variables. |
 | DES-002 | Define typography scale. | P0 | Not Started | DES-001 | Headings, body text, math text, and captions are consistent. |
 | DES-003 | Define spacing scale. | P1 | Not Started | DES-001 | Layout spacing is consistent across pages. |
-| DES-004 | Define button styles. | P0 | Not Started | DES-001 | Primary, secondary, ghost, and icon button styles exist. |
+| DES-004 | Define button styles. | P0 | Done | DES-001 | Primary, secondary, and activity button styles exist in static CSS. |
 | DES-005 | Define form input styles. | P0 | Not Started | DES-001 | Inputs are accessible and visually consistent. |
 | DES-006 | Define card and panel usage. | P1 | Not Started | DES-001 | Cards are used only for repeated items or tools. |
 | DES-007 | Define lesson page layout. | P0 | Not Started | APP-009 | Lesson pages are readable on mobile and desktop. |
 | DES-008 | Define practice UI layout. | P0 | Not Started | PRA-001 | Practice controls are clear and stable. |
 | DES-009 | Add icon system. | P1 | Not Started | APP-001 | Lucide icons or selected icon library is installed and used. |
-| DES-010 | Add accessible focus states. | P0 | Not Started | DES-004 | Keyboard users can see active controls. |
+| DES-010 | Add accessible focus states. | P0 | Done | DES-004 | Keyboard users can see active link and button focus states. |
 | DES-011 | Add responsive visual QA checklist. | P0 | Not Started | DES-007 | Desktop and mobile layouts pass screenshot review. |
 | DES-012 | Add ad-safe layout spacing rules. | P1 | Not Started | ADS-006 | Future ads cannot be confused with lesson controls. |
 | DES-013 | Design nursery activity interface pattern. | P0 | Not Started | PED-001 | Nursery screens use audio, visuals, large controls, and one task per screen. |
@@ -183,11 +183,11 @@ Recommended GitHub labels:
 | PED-003 | Define audio-first requirements for early learning. | P0 | Done | PED-001 | Audio prompts, replay controls, and visual fallback rules are documented. |
 | PED-004 | Define caregiver support pattern. | P0 | Done | PED-001 | Nursery pages include optional parent or teacher helper notes. |
 | PED-005 | Define child-safe privacy requirements. | P0 | Done | PED-001 | Child sections avoid accounts, personal data, public comments, and personalized ads. |
-| PED-006 | Build early learning activity template. | P0 | Not Started | APP-007 | Nursery activities render one task per screen with large touch controls. |
-| PED-007 | Build audio prompt control. | P0 | Not Started | PED-006 | Users can play or replay instructions. |
-| PED-008 | Build picture-based answer component. | P0 | Not Started | PED-006 | Learners can answer without reading text. |
-| PED-009 | Build caregiver note component. | P1 | Not Started | PED-006 | Adults can read guidance without cluttering the child activity. |
-| PED-010 | Create first nursery counting activity. | P0 | Not Started | PED-006 | Activity teaches counting from 1 to 5 without requiring reading. |
+| PED-006 | Build early learning activity template. | P0 | In Progress | APP-007 | Static nursery demo renders one task with large touch controls. |
+| PED-007 | Build audio prompt control. | P0 | In Progress | PED-006 | Static demo includes browser speech replay control. |
+| PED-008 | Build picture-based answer component. | P0 | In Progress | PED-006 | Static demo allows answering by visual circle groups. |
+| PED-009 | Build caregiver note component. | P1 | Done | PED-006 | Static demo includes caregiver note. |
+| PED-010 | Create first nursery counting activity. | P0 | In Progress | PED-006 | Static demo teaches counting to three without requiring reading. |
 | PED-011 | Create first nursery shape activity. | P0 | Not Started | PED-006 | Activity teaches basic shapes with picture matching. |
 | PED-012 | Test nursery flow on mobile. | P0 | Not Started | PED-010 | Activity works with touch targets suitable for young learners. |
 | PED-013 | Review child-directed monetization policy before ads. | P0 | Not Started | ADS-007 | Current COPPA and AdSense age treatment guidance is reviewed before child-section monetization. |
@@ -344,4 +344,4 @@ Recommended GitHub labels:
 
 ## 17. Current Next Action
 
-The next action is to resolve `ENV-001` and `ENV-002` so the local scaffold can be installed and built. GitHub setup is complete for the initial repository push.
+The next action is `ENV-003`: verify the dependency-free static MVP. Framework dependency installation remains blocked, so product work should continue through static pages until the npm issue is fixed.

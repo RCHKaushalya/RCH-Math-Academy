@@ -82,7 +82,9 @@ Recommended deployment flow:
 
 ## 6. Build Configuration
 
-For a Next.js static-first application, the deployment should use:
+For the dependency-free static MVP, deployment does not require a build command. The host can publish the repository root.
+
+For a future Next.js static-first application, the deployment should use:
 
 ```text
 npm install
@@ -114,4 +116,3 @@ Before public launch:
 - Vercel Hobby plan: https://vercel.com/docs/plans/hobby
 - Cloudflare Pages limits: https://developers.cloudflare.com/pages/platform/limits/
 - Netlify pricing: https://www.netlify.com/pricing/
-

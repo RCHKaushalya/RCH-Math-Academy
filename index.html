@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="RCH Math Academy is a free math learning platform planned for learners from nursery numeracy to advanced research mathematics."
+    >
+    <title>RCH Math Academy</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="RCH Math Academy home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>
+          <strong>RCH Math Academy</strong>
+          <small>Free math tutoring path</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#levels">Levels</a>
+        <a href="#nursery">Nursery</a>
+        <a href="#topics">Topics</a>
+        <a href="#quality">Quality</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Math tutoring first. AdSense later.</p>
+          <h1>Learn math in the right voice for your level.</h1>
+          <p class="hero-text">
+            Nursery learners need sound, pictures, and tapping. School learners need clear
+            steps. University and research learners need notation, proofs, models, and
+            serious applications.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#levels">Browse levels</a>
+            <a class="button secondary" href="#nursery">Try nursery mode</a>
+          </div>
+        </div>
+
+        <section class="activity-panel" id="nursery" aria-labelledby="nursery-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Pre-reading activity</p>
+              <h2 id="nursery-title">Count the blue circles</h2>
+            </div>
+            <button class="icon-button" type="button" id="playPrompt" aria-label="Play instruction">
+              <span aria-hidden="true">Audio</span>
+            </button>
+          </div>
+
+          <p class="prompt" id="activityPrompt">Tap the group with three circles.</p>
+
+          <div class="choice-grid" aria-label="Answer choices">
+            <button class="choice-card" type="button" data-correct="false" aria-label="Two circles">
+              <span class="number-label">2</span>
+              <span class="shape-row" aria-hidden="true">
+                <span class="shape circle"></span>
+                <span class="shape circle"></span>
+              </span>
+            </button>
+            <button class="choice-card" type="button" data-correct="true" aria-label="Three circles">
+              <span class="number-label">3</span>
+              <span class="shape-row" aria-hidden="true">
+                <span class="shape circle"></span>
+                <span class="shape circle"></span>
+                <span class="shape circle"></span>
+              </span>
+            </button>
+            <button class="choice-card" type="button" data-correct="false" aria-label="Four circles">
+              <span class="number-label">4</span>
+              <span class="shape-row" aria-hidden="true">
+                <span class="shape circle"></span>
+                <span class="shape circle"></span>
+                <span class="shape circle"></span>
+                <span class="shape circle"></span>
+              </span>
+            </button>
+          </div>
+
+          <p class="feedback" id="activityFeedback" aria-live="polite">
+            Choose an answer.
+          </p>
+
+          <div class="caregiver-note">
+            <strong>Caregiver note:</strong>
+            Count slowly with the learner. Let them touch each circle while counting.
+          </div>
+        </section>
+      </section>
+
+      <section class="content-section white-band" id="levels">
+        <div class="section-heading">
+          <p class="section-kicker">Learning levels</p>
+          <h2>Different audiences need different teaching styles.</h2>
+        </div>
+        <div class="level-grid">
+          <article class="level-card">
+            <span class="level-code">L00</span>
+            <h3>Nursery</h3>
+            <p>Audio-first activities for counting, shapes, ordering, and patterns.</p>
+            <strong>Listen, look, tap.</strong>
+          </article>
+          <article class="level-card">
+            <span class="level-code">L01-L03</span>
+            <h3>Primary and Middle School</h3>
+            <p>Visual lessons, short explanations, step-by-step examples, and practice.</p>
+            <strong>Read, watch, practice.</strong>
+          </article>
+          <article class="level-card">
+            <span class="level-code">L04-L06</span>
+            <h3>High School and College Ready</h3>
+            <p>Algebra, functions, geometry, trigonometry, statistics, and exam support.</p>
+            <strong>Solve, review, improve.</strong>
+          </article>
+          <article class="level-card">
+            <span class="level-code">L07-L10</span>
+            <h3>University and Research</h3>
+            <p>Definitions, proofs, derivations, scientific models, and applied mathematics.</p>
+            <strong>Define, derive, validate.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="topics">
+        <div class="split-layout">
+          <div>
+            <p class="section-kicker">Topic map</p>
+            <h2>Start narrow, but build toward the full mathematics path.</h2>
+            <p>
+              The first public version should be small and excellent. The long-term
+              curriculum can still grow from early counting to aerospace mathematics.
+            </p>
+          </div>
+          <div class="topic-list">
+            <article>
+              <h3>Early Numeracy</h3>
+              <p>Counting, comparison, shapes, matching, ordering, and visual patterns.</p>
+            </article>
+            <article>
+              <h3>School Mathematics</h3>
+              <p>Arithmetic, fractions, decimals, algebra foundations, geometry, and data.</p>
+            </article>
+            <article>
+              <h3>University Mathematics</h3>
+              <p>Calculus, linear algebra, discrete mathematics, probability, and modeling.</p>
+            </article>
+            <article>
+              <h3>Research and Applied</h3>
+              <p>Optimization, control, numerical simulation, and aerospace-relevant math.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="quality-section" id="quality">
+        <div>
+          <p class="section-kicker light">Quality rule</p>
+          <h2>The site must become useful before it earns.</h2>
+        </div>
+        <ul class="quality-list">
+          <li>Nursery activity screens stay ad-free.</li>
+          <li>Lessons use the correct voice for the learner level.</li>
+          <li>Every lesson needs examples, practice, and answer explanations.</li>
+          <li>Advanced pages must include precise notation and prerequisites.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RCH Math Academy. Free math learning, built carefully.</p>
+      <nav aria-label="Footer navigation">
+        <a href="docs/README.md">Docs</a>
+        <a href="https://github.com/RCHKaushalya/RCH-Math-Academy">GitHub</a>
+      </nav>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

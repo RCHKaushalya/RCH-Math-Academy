@@ -6,7 +6,7 @@ The first priority is the learning platform. AdSense monetization is a later pha
 
 ## Current Status
 
-The project is in planning and foundation setup.
+The project is in planning and foundation setup. The first runnable version is a dependency-free static MVP so it can be opened, tested, committed, and deployed without waiting on a broken local npm install.
 
 Completed:
 
@@ -15,6 +15,8 @@ Completed:
 - Curriculum scope created.
 - Design and content standards created.
 - Local Git repository initialized.
+- GitHub remote connected and pushed.
+- Static sky-blue MVP home page created.
 
 ## Documentation
 
@@ -28,7 +30,7 @@ Start here:
 
 ## Product Direction
 
-The site will use:
+The site uses:
 
 - A modern sky-blue elegant light theme.
 - Level-specific teaching language.
@@ -36,7 +38,16 @@ The site will use:
 - Clear written explanations for school learners.
 - Formal notation, proofs, and applications for advanced learners.
 
+## Local Preview
+
+Open `index.html` in a browser.
+
+Optional static check:
+
+```bash
+node scripts/check-static.js
+```
+
 ## Next Tasks
 
-The next tracker task after local setup is to create the GitHub repository and then scaffold the web application foundation.
-
+The next tracker task is to expand the static MVP into real lesson pages and early learning activities. A framework such as Next.js can be reintroduced later when the local npm install issue is fixed.
