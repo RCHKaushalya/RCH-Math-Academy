@@ -86,9 +86,9 @@ Recommended GitHub labels:
 | GIT-001 | Initialize local Git repository. | P0 | Done | DOC-009 | `.git` exists locally. |
 | GIT-002 | Create `.gitignore`. | P0 | Done | GIT-001 | Common Node, build, environment, and OS files are ignored. |
 | GIT-003 | Create project root `README.md`. | P0 | Done | GIT-001 | README explains project purpose and local setup. |
-| GIT-004 | Create GitHub repository. | P0 | Blocked | GIT-001 | Remote repository exists on GitHub. Blocked locally because GitHub CLI is not installed and no repository connector is available. |
-| GIT-005 | Connect local repository to GitHub remote. | P0 | Not Started | GIT-004 | `origin` remote points to GitHub. |
-| GIT-006 | Push initial repository commit. | P0 | Not Started | GIT-005 | Initial docs and scaffold are committed and pushed. |
+| GIT-004 | Create GitHub repository. | P0 | Done | GIT-001 | Remote repository exists on GitHub: `https://github.com/RCHKaushalya/RCH-Math-Academy.git`. |
+| GIT-005 | Connect local repository to GitHub remote. | P0 | Done | GIT-004 | `origin` remote points to GitHub. |
+| GIT-006 | Push initial repository commit. | P0 | Done | GIT-005 | Initial docs and scaffold are committed and pushed to `origin/main`. |
 | GIT-007 | Define issue labels. | P1 | Not Started | GIT-004 | GitHub labels match this tracker. |
 | GIT-008 | Convert tracker items into GitHub Issues. | P1 | Not Started | GIT-007 | Required P0 and P1 tasks are represented as issues. |
 | GIT-009 | Create branch protection rule for `main`. | P2 | Not Started | GIT-004 | Direct accidental production changes are reduced. |
@@ -344,4 +344,4 @@ Recommended GitHub labels:
 
 ## 17. Current Next Action
 
-The next action is to resolve `ENV-001` and `ENV-002` so the local scaffold can be installed and built. `GIT-004` is blocked until GitHub tooling or a repository URL is available.
+The next action is to resolve `ENV-001` and `ENV-002` so the local scaffold can be installed and built. GitHub setup is complete for the initial repository push.
