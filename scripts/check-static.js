@@ -2,7 +2,14 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const requiredFiles = ["index.html", "styles.css", "app.js", "docs/08-action-tracker.md"];
+const requiredFiles = [
+  "index.html",
+  "styles.css",
+  "app.js",
+  "assets/logo.svg",
+  "assets/tutor-avatar.svg",
+  "docs/08-action-tracker.md"
+];
 const missing = requiredFiles.filter((file) => !fs.existsSync(path.join(root, file)));
 
 if (missing.length > 0) {
@@ -15,7 +22,9 @@ const requiredFragments = [
   "RCH Math Academy",
   "Tap the group with three circles.",
   "Mathematics from first numbers to advanced ideas.",
-  "Study a short lesson"
+  "Study a short lesson",
+  "assets/logo.svg",
+  "assets/tutor-avatar.svg"
 ];
 
 const missingFragments = requiredFragments.filter((fragment) => !html.includes(fragment));

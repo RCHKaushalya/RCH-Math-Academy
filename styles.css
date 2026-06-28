@@ -69,16 +69,10 @@ button:focus-visible {
   gap: 12px;
 }
 
-.brand-mark {
-  display: inline-flex;
+.brand-logo {
   width: 42px;
   height: 42px;
-  align-items: center;
-  justify-content: center;
   border-radius: 8px;
-  background: var(--gray-900);
-  color: var(--white);
-  font-weight: 800;
 }
 
 .brand strong,
@@ -226,6 +220,21 @@ h3 {
 .study-preview {
   box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
   padding: 24px;
+}
+
+.preview-top {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.tutor-avatar {
+  width: 92px;
+  height: 92px;
+  border: 1px solid var(--gray-200);
+  border-radius: 18px;
+  background: var(--gray-50);
 }
 
 .equation-card {
@@ -669,5 +678,9 @@ h3 {
 
   .practice-list strong {
     grid-column: 2;
+  }
+
+  .preview-top {
+    grid-template-columns: 1fr;
   }
 }

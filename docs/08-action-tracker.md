@@ -149,6 +149,7 @@ Recommended GitHub labels:
 | DES-013 | Design nursery activity interface pattern. | P0 | Not Started | PED-001 | Nursery screens use audio, visuals, large controls, and one task per screen. |
 | DES-014 | Design level-specific page templates. | P0 | Not Started | PED-002 | Templates exist for early learning, guided lessons, standard lessons, and advanced lessons. |
 | DES-015 | Remove internal requirement language from public pages. | P0 | Done | User request | Public page shows learning content only and does not show requirements, monetization plans, GitHub links, or documentation links. |
+| DES-016 | Create public logo and tutor avatar assets. | P1 | Done | DES-001 | SVG logo and tutor avatar exist in `assets` and are used on the public page. |
 
 ## 8. Phase 4 - Curriculum Architecture
 
