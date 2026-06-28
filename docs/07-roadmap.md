@@ -47,7 +47,7 @@ Deliverables:
 - Lesson page template.
 - Early learning activity template.
 - Policy page templates.
-- Sky-blue elegant light theme.
+- Gray elegant light theme.
 
 Exit Criteria:
 
@@ -150,7 +150,7 @@ Exit Criteria:
 1. Initialize the Git repository.
 2. Create the GitHub repository.
 3. Initialize the application stack.
-4. Implement the sky-blue elegant light theme.
+4. Implement the gray elegant light theme.
 5. Create level-specific page templates.
 6. Create the first nursery activities.
 7. Create the first topic and lesson templates.

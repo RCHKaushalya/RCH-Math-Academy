@@ -8,7 +8,7 @@ Project: Math Tutor Web Application
 
 This document defines the visual design and content quality standards for the Math Tutor platform. The site should feel modern, elegant, calm, trustworthy, and easy to learn from.
 
-The required visual direction is a sky-blue elegant light theme.
+The required visual direction is an elegant gray light theme.
 
 ## 2. Design Principles
 
@@ -27,20 +27,18 @@ Recommended palette:
 
 | Token | Color | Usage |
 | --- | --- | --- |
-| `sky-50` | `#f0f9ff` | Page background accents. |
-| `sky-100` | `#e0f2fe` | Soft panels and selected states. |
-| `sky-500` | `#0ea5e9` | Primary actions and active navigation. |
-| `sky-600` | `#0284c7` | Primary hover states. |
-| `sky-800` | `#075985` | Strong headings or active text. |
-| `slate-950` | `#020617` | Main text. |
-| `slate-700` | `#334155` | Secondary text. |
-| `slate-200` | `#e2e8f0` | Borders. |
+| `gray-50` | `#f8fafc` | Page background. |
+| `gray-100` | `#f1f5f9` | Soft panels and visual blocks. |
+| `gray-200` | `#e2e8f0` | Borders. |
+| `gray-600` | `#475569` | Secondary text. |
+| `gray-700` | `#334155` | Strong secondary text and inactive navigation. |
+| `gray-900` | `#0f172a` | Main text, primary actions, and dark bands. |
 | `white` | `#ffffff` | Main content background. |
 | `emerald-500` | `#10b981` | Correct answer feedback. |
 | `rose-500` | `#f43f5e` | Incorrect answer feedback. |
 | `amber-500` | `#f59e0b` | Warnings and hints. |
 
-The theme should use sky blue as the main identity color while retaining neutral slate text and small functional accents for success, warning, and error states.
+The theme should use gray as the main visual system, with limited functional accents for success, warning, and error states.
 
 ## 4. Typography
 
@@ -100,7 +98,7 @@ Required components:
 
 Button requirements:
 
-- Primary actions use sky blue.
+- Primary actions use dark gray.
 - Destructive actions use rose only when required.
 - Icon buttons should use recognizable icons.
 - Buttons must have visible focus states.
@@ -197,4 +195,8 @@ Before publishing a page, verify:
 - The page works on mobile.
 - The page has SEO metadata.
 - Links work.
-- The page matches the sky-blue light theme.
+- The page matches the gray light theme.
+
+## 13. Public Page Content Rule
+
+Learner-facing pages should show learning content, navigation, practice, examples, diagrams, and learner support. They should not show internal project requirements, monetization strategy, GitHub links, documentation links, roadmap language, or task tracker language.

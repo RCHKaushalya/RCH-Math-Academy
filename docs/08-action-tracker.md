@@ -75,7 +75,7 @@ Recommended GitHub labels:
 | DOC-008 | Create phased roadmap. | P0 | Done | None | Roadmap document exists. |
 | DOC-009 | Create master action tracker. | P0 | Done | User request | This document exists with trackable task IDs. |
 | DOC-010 | Create curriculum scope document. | P0 | Done | User request | Curriculum scope covers early numeracy through research mathematics. |
-| DOC-011 | Create design and content quality standards. | P0 | Done | User request | Design standards include sky-blue elegant light theme. |
+| DOC-011 | Create design and content quality standards. | P0 | Done | User request | Design standards include gray elegant light theme. |
 | DOC-013 | Create learning experience and pedagogy document. | P0 | Done | User request | Pedagogy document defines level-specific voice and nursery-first interaction strategy. |
 | DOC-012 | Review documentation after each major phase. | P1 | Not Started | Phase completion | Docs match implemented product state. |
 
@@ -130,11 +130,11 @@ Recommended GitHub labels:
 | APP-019 | Add environment variable pattern. | P1 | Not Started | APP-001 | Future secrets are not hard-coded. |
 | APP-020 | Add production build command. | P2 | Blocked | ENV-002 | Build command will be added when framework tooling is reliable. Static MVP does not require a build command. |
 
-## 7. Phase 3 - Sky-Blue Elegant Design System
+## 7. Phase 3 - Gray Elegant Design System
 
 | ID | Task | Priority | Status | Depends On | Acceptance Criteria |
 | --- | --- | --- | --- | --- | --- |
-| DES-001 | Define sky-blue light theme color tokens. | P0 | Done | DOC-011 | Theme tokens are implemented in static CSS variables. |
+| DES-001 | Define gray light theme color tokens. | P0 | Done | DOC-011 | Theme tokens are implemented in static CSS variables. |
 | DES-002 | Define typography scale. | P0 | Not Started | DES-001 | Headings, body text, math text, and captions are consistent. |
 | DES-003 | Define spacing scale. | P1 | Not Started | DES-001 | Layout spacing is consistent across pages. |
 | DES-004 | Define button styles. | P0 | Done | DES-001 | Primary, secondary, and activity button styles exist in static CSS. |
@@ -148,6 +148,7 @@ Recommended GitHub labels:
 | DES-012 | Add ad-safe layout spacing rules. | P1 | Not Started | ADS-006 | Future ads cannot be confused with lesson controls. |
 | DES-013 | Design nursery activity interface pattern. | P0 | Not Started | PED-001 | Nursery screens use audio, visuals, large controls, and one task per screen. |
 | DES-014 | Design level-specific page templates. | P0 | Not Started | PED-002 | Templates exist for early learning, guided lessons, standard lessons, and advanced lessons. |
+| DES-015 | Remove internal requirement language from public pages. | P0 | Done | User request | Public page shows learning content only and does not show requirements, monetization plans, GitHub links, or documentation links. |
 
 ## 8. Phase 4 - Curriculum Architecture
 

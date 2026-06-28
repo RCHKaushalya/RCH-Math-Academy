@@ -14,8 +14,8 @@ const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const requiredFragments = [
   "RCH Math Academy",
   "Tap the group with three circles.",
-  "Nursery activity screens stay ad-free.",
-  "docs/README.md"
+  "Mathematics from first numbers to advanced ideas.",
+  "Study a short lesson"
 ];
 
 const missingFragments = requiredFragments.filter((fragment) => !html.includes(fragment));

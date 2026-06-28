@@ -16,7 +16,7 @@ Completed:
 - Design and content standards created.
 - Local Git repository initialized.
 - GitHub remote connected and pushed.
-- Static sky-blue MVP home page created.
+- Static gray-theme MVP home page created.
 
 ## Documentation
 
@@ -32,7 +32,7 @@ Start here:
 
 The site uses:
 
-- A modern sky-blue elegant light theme.
+- A modern, elegant gray academic theme.
 - Level-specific teaching language.
 - Visual, audio, and touch-first learning for nursery learners.
 - Clear written explanations for school learners.

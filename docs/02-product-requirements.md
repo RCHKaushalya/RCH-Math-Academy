@@ -36,7 +36,7 @@ The product must not use one teaching voice for every learner. Each level needs 
 - Keep the platform fast, accessible, and mobile-friendly.
 - Use free tools and hosting where practical.
 - Establish a curriculum path that can grow from early learning to research-level mathematics.
-- Use a modern, elegant, sky-blue light theme.
+- Use a modern, elegant gray light theme.
 - Maintain a high content quality standard before monetization.
 - Provide different lesson templates for pre-reading, school, university, and research learners.
 

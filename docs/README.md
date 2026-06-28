@@ -22,7 +22,7 @@ This folder contains the formal planning and technical documentation for the Mat
 | [07-roadmap.md](07-roadmap.md) | Defines the phased implementation roadmap. |
 | [08-action-tracker.md](08-action-tracker.md) | Defines every trackable project action with IDs, status, priority, dependencies, and acceptance criteria. |
 | [09-curriculum-scope.md](09-curriculum-scope.md) | Defines the long-term mathematics scope from early numeracy through research-level mathematics. |
-| [10-design-and-content-standards.md](10-design-and-content-standards.md) | Defines the sky-blue light theme, interface standards, and content quality requirements. |
+| [10-design-and-content-standards.md](10-design-and-content-standards.md) | Defines the gray light theme, interface standards, and content quality requirements. |
 | [11-learning-experience-and-pedagogy.md](11-learning-experience-and-pedagogy.md) | Defines level-specific teaching voice, nursery-first interaction design, and child-safe learning requirements. |
 
 ## Current Recommendation
@@ -50,3 +50,7 @@ The long-term vision is broad: the platform should grow from nursery-level early
 ## Pedagogy Principle
 
 Different learners need different teaching voices and interaction models. Nursery learners should not be expected to read independently. Their experience should be visual, audio-guided, touch-friendly, and caregiver-friendly. Advanced learners should receive precise language, notation, derivations, proofs, and serious applications.
+
+## Public Page Principle
+
+The public website should show learning content only. Internal requirements, monetization plans, tracker language, GitHub links, and documentation links should stay out of learner-facing pages.
