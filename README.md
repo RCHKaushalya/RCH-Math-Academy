@@ -17,6 +17,7 @@ Completed:
 - Local Git repository initialized.
 - GitHub remote connected and pushed.
 - Static gray-theme MVP home page created.
+- First public lesson pages and nursery shape activity created.
 
 ## Documentation
 
@@ -41,6 +42,14 @@ The site uses:
 ## Local Preview
 
 Open `index.html` in a browser.
+
+Public pages now include:
+
+- `lessons/index.html`
+- `lessons/counting-objects.html`
+- `lessons/adding-numbers.html`
+- `lessons/linear-equations.html`
+- `nursery/shapes.html`
 
 Optional static check:
 

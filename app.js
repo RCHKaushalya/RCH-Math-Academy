@@ -1,4 +1,4 @@
-const promptText = "Tap the group with three circles.";
+const promptText = document.querySelector("#activityPrompt")?.textContent?.trim() || "Choose the correct answer.";
 const feedback = document.querySelector("#activityFeedback");
 const choices = document.querySelectorAll(".choice-card");
 const playPrompt = document.querySelector("#playPrompt");
@@ -27,15 +27,18 @@ choices.forEach((choice) => {
 
     if (choice.dataset.correct === "true") {
       choice.classList.add("correct");
-      feedback.textContent = "Correct. Three circles.";
+      feedback.textContent = choice.getAttribute("aria-label")
+        ? `Correct. ${choice.getAttribute("aria-label")}.`
+        : "Correct.";
       feedback.className = "feedback success";
     } else {
       choice.classList.add("incorrect");
-      feedback.textContent = "Try again. Count each circle slowly.";
+      feedback.textContent = "Try again. Look carefully and choose once more.";
       feedback.className = "feedback error";
     }
   });
 });
 
-playPrompt.addEventListener("click", speakPrompt);
-
+if (playPrompt) {
+  playPrompt.addEventListener("click", speakPrompt);
+}

@@ -115,9 +115,9 @@ Recommended GitHub labels:
 | APP-004 | Add linting. | P1 | Blocked | ENV-002 | Lint tooling will be added after dependency installation is reliable. |
 | APP-005 | Add formatting command. | P1 | Not Started | APP-001 | Format command exists and runs. |
 | APP-006 | Add base application layout. | P0 | Done | APP-001 | Static layout renders header, main area, and footer. |
-| APP-007 | Add route structure. | P0 | Not Started | APP-006 | Routes exist for home, topics, lessons, practice, and policy pages. |
+| APP-007 | Add route structure. | P0 | In Progress | APP-006 | Routes exist for home, lessons, and nursery activity pages. Policy pages remain for a later phase. |
 | APP-008 | Add reusable page metadata helper. | P0 | Not Started | APP-007 | Pages can generate unique SEO metadata. |
-| APP-009 | Add reusable lesson template. | P0 | Not Started | APP-007 | Lesson content renders in a consistent format. |
+| APP-009 | Add reusable lesson template. | P0 | In Progress | APP-007 | Static lesson pages share a consistent layout, sidebar, examples, mistakes, and practice structure. |
 | APP-010 | Add topic index page. | P0 | Not Started | APP-007 | Users can browse topic groups. |
 | APP-011 | Add level index page. | P0 | Not Started | APP-007 | Users can browse by level. |
 | APP-012 | Add search index data structure. | P1 | Not Started | APP-010 | Lesson metadata can be searched client-side. |
@@ -140,13 +140,13 @@ Recommended GitHub labels:
 | DES-004 | Define button styles. | P0 | Done | DES-001 | Primary, secondary, and activity button styles exist in static CSS. |
 | DES-005 | Define form input styles. | P0 | Not Started | DES-001 | Inputs are accessible and visually consistent. |
 | DES-006 | Define card and panel usage. | P1 | Not Started | DES-001 | Cards are used only for repeated items or tools. |
-| DES-007 | Define lesson page layout. | P0 | Not Started | APP-009 | Lesson pages are readable on mobile and desktop. |
+| DES-007 | Define lesson page layout. | P0 | Done | APP-009 | Static lesson pages are readable on mobile and desktop. |
 | DES-008 | Define practice UI layout. | P0 | Not Started | PRA-001 | Practice controls are clear and stable. |
 | DES-009 | Add icon system. | P1 | Not Started | APP-001 | Lucide icons or selected icon library is installed and used. |
 | DES-010 | Add accessible focus states. | P0 | Done | DES-004 | Keyboard users can see active link and button focus states. |
 | DES-011 | Add responsive visual QA checklist. | P0 | Not Started | DES-007 | Desktop and mobile layouts pass screenshot review. |
 | DES-012 | Add ad-safe layout spacing rules. | P1 | Not Started | ADS-006 | Future ads cannot be confused with lesson controls. |
-| DES-013 | Design nursery activity interface pattern. | P0 | Not Started | PED-001 | Nursery screens use audio, visuals, large controls, and one task per screen. |
+| DES-013 | Design nursery activity interface pattern. | P0 | Done | PED-001 | Nursery screens use audio, visuals, large controls, and one task per screen. |
 | DES-014 | Design level-specific page templates. | P0 | Not Started | PED-002 | Templates exist for early learning, guided lessons, standard lessons, and advanced lessons. |
 | DES-015 | Remove internal requirement language from public pages. | P0 | Done | User request | Public page shows learning content only and does not show requirements, monetization plans, GitHub links, or documentation links. |
 | DES-016 | Create public logo and tutor avatar assets. | P1 | Done | DES-001 | SVG logo and tutor avatar exist in `assets` and are used on the public page. |
@@ -185,12 +185,12 @@ Recommended GitHub labels:
 | PED-003 | Define audio-first requirements for early learning. | P0 | Done | PED-001 | Audio prompts, replay controls, and visual fallback rules are documented. |
 | PED-004 | Define caregiver support pattern. | P0 | Done | PED-001 | Nursery pages include optional parent or teacher helper notes. |
 | PED-005 | Define child-safe privacy requirements. | P0 | Done | PED-001 | Child sections avoid accounts, personal data, public comments, and personalized ads. |
-| PED-006 | Build early learning activity template. | P0 | In Progress | APP-007 | Static nursery demo renders one task with large touch controls. |
-| PED-007 | Build audio prompt control. | P0 | In Progress | PED-006 | Static demo includes browser speech replay control. |
-| PED-008 | Build picture-based answer component. | P0 | In Progress | PED-006 | Static demo allows answering by visual circle groups. |
+| PED-006 | Build early learning activity template. | P0 | Done | APP-007 | Static nursery activities render one task with large touch controls. |
+| PED-007 | Build audio prompt control. | P0 | Done | PED-006 | Static nursery activities include browser speech replay control. |
+| PED-008 | Build picture-based answer component. | P0 | Done | PED-006 | Static nursery activities allow answering by visual choices. |
 | PED-009 | Build caregiver note component. | P1 | Done | PED-006 | Static demo includes caregiver note. |
-| PED-010 | Create first nursery counting activity. | P0 | In Progress | PED-006 | Static demo teaches counting to three without requiring reading. |
-| PED-011 | Create first nursery shape activity. | P0 | Not Started | PED-006 | Activity teaches basic shapes with picture matching. |
+| PED-010 | Create first nursery counting activity. | P0 | Done | PED-006 | Static demo teaches counting to three without requiring reading. |
+| PED-011 | Create first nursery shape activity. | P0 | Done | PED-006 | Activity teaches basic shapes with picture matching. |
 | PED-012 | Test nursery flow on mobile. | P0 | Not Started | PED-010 | Activity works with touch targets suitable for young learners. |
 | PED-013 | Review child-directed monetization policy before ads. | P0 | Not Started | ADS-007 | Current COPPA and AdSense age treatment guidance is reviewed before child-section monetization. |
 
@@ -198,18 +198,18 @@ Recommended GitHub labels:
 
 | ID | Task | Priority | Status | Depends On | Acceptance Criteria |
 | --- | --- | --- | --- | --- | --- |
-| CON-001 | Create lesson authoring template. | P0 | Not Started | CUR-006 | Template includes objective, explanation, examples, mistakes, practice, and summary. |
+| CON-001 | Create lesson authoring template. | P0 | In Progress | CUR-006 | Published lesson pages include objective, explanation, examples, mistakes, practice, and next steps. |
 | CON-002 | Create practice question template. | P0 | Not Started | CUR-007 | Template supports answer and explanation. |
 | CON-003 | Create topic overview template. | P0 | Not Started | CUR-003 | Template explains a topic and links lessons. |
-| CON-004 | Create first 10 early math lessons. | P0 | Not Started | CON-001 | Ten original beginner lessons are published. |
-| CON-005 | Create first 10 arithmetic lessons. | P0 | Not Started | CON-001 | Ten original arithmetic lessons are published. |
-| CON-006 | Create first 10 algebra foundation lessons. | P0 | Not Started | CON-001 | Ten original algebra foundation lessons are published. |
+| CON-004 | Create first 10 early math lessons. | P0 | In Progress | CON-001 | One original early lesson is published; ten are required for completion. |
+| CON-005 | Create first 10 arithmetic lessons. | P0 | In Progress | CON-001 | One original arithmetic lesson is published; ten are required for completion. |
+| CON-006 | Create first 10 algebra foundation lessons. | P0 | In Progress | CON-001 | One original algebra foundation lesson is published; ten are required for completion. |
 | CON-007 | Create first 5 geometry foundation lessons. | P1 | Not Started | CON-001 | Five original geometry lessons are published. |
 | CON-008 | Create first 5 statistics or data lessons. | P1 | Not Started | CON-001 | Five original statistics lessons are published. |
-| CON-009 | Add worked examples to every MVP lesson. | P0 | Not Started | CON-004 | Every MVP lesson has at least two worked examples. |
-| CON-010 | Add common mistakes to every MVP lesson. | P0 | Not Started | CON-004 | Every MVP lesson includes misconception guidance. |
-| CON-011 | Add practice questions to every MVP lesson. | P0 | Not Started | CON-002 | Every MVP lesson has at least five questions. |
-| CON-012 | Add internal related lesson links. | P0 | Not Started | CUR-004 | Lessons link to prerequisites and next lessons. |
+| CON-009 | Add worked examples to every MVP lesson. | P0 | In Progress | CON-004 | Published lesson pages include worked examples; full MVP coverage remains incomplete. |
+| CON-010 | Add common mistakes to every MVP lesson. | P0 | In Progress | CON-004 | Published lesson pages include misconception guidance; full MVP coverage remains incomplete. |
+| CON-011 | Add practice questions to every MVP lesson. | P0 | In Progress | CON-002 | Published lesson pages include practice questions; full MVP coverage remains incomplete. |
+| CON-012 | Add internal related lesson links. | P0 | In Progress | CUR-004 | Published lessons link to related lessons and activities. |
 | CON-013 | Add visual aids for selected lessons. | P1 | Not Started | DES-007 | Diagrams or visual examples support difficult concepts. |
 | CON-014 | Review content for originality. | P0 | Not Started | CON-004 | No copied text is present. |
 | CON-015 | Review content for mathematical correctness. | P0 | Not Started | CON-004 | Examples and answers are checked. |
@@ -218,6 +218,7 @@ Recommended GitHub labels:
 | CON-018 | Add NASA-relevant math seed pages. | P2 | Not Started | CUR-017 | Specialist topic pages exist as structured placeholders with original summaries. |
 | CON-019 | Create content publishing checklist. | P0 | Not Started | CON-001 | Checklist must be completed before publishing each lesson. |
 | CON-020 | Create content update schedule. | P1 | Not Started | CON-019 | Monthly review schedule exists. |
+| CON-021 | Create first public lessons index. | P0 | Done | APP-007 | `lessons/index.html` links to the first lesson and activity pages. |
 
 ## 10. Phase 6 - Interactive Practice
 

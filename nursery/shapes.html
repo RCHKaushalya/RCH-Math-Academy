@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A nursery shape matching activity with large visual choices and audio prompt support."
+    >
+    <title>Match the Shape | RCH Math Academy</title>
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="RCH Math Academy home">
+        <img class="brand-logo" src="../assets/logo.svg" alt="" aria-hidden="true">
+        <span>
+          <strong>RCH Math Academy</strong>
+          <small>Learn mathematics clearly</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="../index.html#nursery">Nursery</a>
+        <a href="../index.html#levels">Levels</a>
+        <a href="../lessons/index.html">Lessons</a>
+        <a href="../index.html#practice">Practice</a>
+      </nav>
+    </header>
+
+    <main class="activity-page">
+      <section class="page-hero compact">
+        <p class="eyebrow">Nursery</p>
+        <h1>Match the shape</h1>
+        <p>Listen to the instruction, look carefully, and tap the circle.</p>
+      </section>
+
+      <section class="activity-panel wide" aria-labelledby="shape-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="shape-title">Find the circle</h2>
+            <p id="activityPrompt">Tap the circle.</p>
+          </div>
+          <button class="icon-button" type="button" id="playPrompt" aria-label="Play instruction">
+            Play
+          </button>
+        </div>
+
+        <div class="choice-grid shape-choice-grid" aria-label="Shape choices">
+          <button class="choice-card shape-choice-card" type="button" data-correct="true" aria-label="Circle">
+            <span class="big-shape big-circle" aria-hidden="true"></span>
+            <span class="number-label">Circle</span>
+          </button>
+          <button class="choice-card shape-choice-card" type="button" data-correct="false" aria-label="Square">
+            <span class="big-shape big-square" aria-hidden="true"></span>
+            <span class="number-label">Square</span>
+          </button>
+          <button class="choice-card shape-choice-card" type="button" data-correct="false" aria-label="Triangle">
+            <span class="big-shape big-triangle" aria-hidden="true"></span>
+            <span class="number-label">Triangle</span>
+          </button>
+        </div>
+
+        <p class="feedback" id="activityFeedback" aria-live="polite">Choose a shape.</p>
+
+        <div class="caregiver-note">
+          <strong>Learning tip:</strong>
+          Say the shape name, then trace the shape edge in the air.
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RCH Math Academy</p>
+      <p>Learn clearly. Practice steadily.</p>
+    </footer>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
